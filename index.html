@@ -11,24 +11,28 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul>
-              <li class="menu-item"><a href="index.html">Inicio</a></li>
-              <li class="menu-item"><a href="pages/travesias.html">Travesías</a></li>
-              <li class="menu-item"><a href="pages/consejos.html">Consejos</a></li>
-              <li class="menu-item"><a href="pages/quienes_somos.html">Quienes somos</a></li>
-              <li class="menu-item"><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-            <div id="logo" class="right"></div>
-          </nav>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/trekking-logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Trekking Page
+                  </a>
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item"><a class="nav-link" href="pages/travesias.html">Travesías</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pages/consejos.html">Consejos</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pages/quienes_somos.html">Quienes somos</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                </ul>
     </header>
     <main>
-        <section>
-            <div id="home-banner"></div>
-        </section>
+        <div class="container">
+            <section>
+                <div id="home-banner" class="my-0"></div>
+            </section>
+        </div>
     </main>
     <footer>
-        <p>info@trekking-page.com</p>
+        <p class="m-0 p-0">info@trekking-page.com</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
