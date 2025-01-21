@@ -8,31 +8,12 @@ footer {
     text-align: end;
 }
 
-.menu {
-    background-color: lightseagreen;
-    padding: 5px;
-}
-
-.menu-item {
-    margin-left: 20px;
-}
-
 #home-banner {
     margin-top: 10px;
     margin-bottom: 10px;
     height: 600px;
     background-size: cover;
     background-image: url(images/banner_home.jpg);
-}
-
-#logo {
-    height: 40px;
-    width: 50px;
-    background-size: cover;
-    background-image: url(images/trekking-logo.png);
-    float: right;
-    margin: 5px;
-    margin-right: 40px;
 }
 
 .main {
@@ -61,6 +42,27 @@ footer {
     background-size: cover;
     background-image: url(images/travesia3.jpg);
     margin-left: 30px;
+}
+
+#img-travesia4 {
+    width: 800px;
+    background-size: cover;
+    background-image: url(images/travesia4.jpg);
+    margin-right: 30px;
+}
+
+#img-travesia5 {
+    width: 800px;
+    background-size: cover;
+    background-image: url(images/travesia5.jpg);
+    margin-left: 30px;
+}
+
+#img-travesia6 {
+    width: 800px;
+    background-size: cover;
+    background-image: url(images/travesia6.jpg);
+    margin-right: 30px;
 }
 
 section div {
