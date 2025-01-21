@@ -1,0 +1,128 @@
+nav ul {
+    display: inline-block;
+    margin: 10px;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+footer {
+    background-color: lightseagreen;
+    padding: 5px;
+    padding-right: 40px;
+    font-family: sans-serif;
+    font-size: small;
+    text-align: end;
+}
+
+.menu {
+    background-color: lightseagreen;
+    padding: 5px;
+}
+
+.menu-item {
+    margin-left: 10px;
+}
+
+#home-banner {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 600px;
+    background-size: cover;
+    background-image: url(images/banner_home.jpg);
+}
+
+.main {
+    padding: 20px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#img-travesia1 {
+    width: auto;
+    height: 200px;
+    background-size: cover;
+    background-image: url(images/travesia1.jpg);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#img-travesia2 {
+    width: auto;
+    height: 200px;
+    background-size: cover;
+    background-image: url(images/travesia2.jpg);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#img-travesia3 {
+    width: auto;
+    height: 200px;
+    background-size: cover;
+    background-image: url(images/travesia3.jpg);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.rojo {
+    color: rgb(216, 55, 55);
+}
+
+.negrita {
+    font-weight: bolder;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+#who-banner {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 600px;
+    background-size: cover;
+    background-image: url(images/banner_who.png);
+}
+
+.lista-clasica {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.centro {
+    margin: 0 auto;
+}
+
+#form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 286px;
+}
+
+.form-label {
+    display: inline-block;
+    width: 100px;
+}
+
+.form-input {
+    width: 280px;
+}
+
+.form-textarea {
+    width: 280px;
+    height: 100px;
+}
+
+.flota-r {
+    float:right;
+}
