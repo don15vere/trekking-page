@@ -1,10 +1,16 @@
+$primary-color: rgb(202, 202, 202) 
+$bg-color: rgb(50, 50, 50)
+
+@mixin sans-serif-font($size: small) 
+	font-family: sans-serif
+	font-size: $size
+	
 footer
-	background-color: rgb(50, 50, 50) 
-	color: rgb(202, 202, 202) 
+	@include sans-serif-font
+	background-color: $bg-color
+	color: $primary-color 
 	padding: 5px 
-	padding-right: 40px 
-	font-family: sans-serif 
-	font-size: small 
+	padding-right: 40px	 
 	text-align: end 
 #home-banner 
 	margin-top: 10px 
@@ -16,37 +22,34 @@ footer
 	padding: 20px 
 	border: 1px solid #000 
 	margin-top: 10px 
-	margin-bottom: 10px 
+	margin-bottom: 10px
+%img-travesia 
+	width: 800px 
+	background-size: cover
+%img-travesia-left 
+	@extend %img-travesia 
+	margin-left: 30px
+%img-travesia-right 
+	@extend %img-travesia 
+	margin-right: 30px	
 #img-travesia1 
-	width: 800px 
-	background-size: cover 
-	background-image: url(images/travesia1.jpg) 
-	margin-left: 30px 
+	@extend %img-travesia-left
+	background-image: url(images/travesia1.jpg)
 #img-travesia2 
-	width: 800px 
-	background-size: cover 
-	background-image: url(images/travesia2.jpg) 
-	margin-right: 30px 
+	@extend %img-travesia-right 
+	background-image: url(images/travesia2.jpg)
 #img-travesia3 
-	width: 800px 
-	background-size: cover 
-	background-image: url(images/travesia3.jpg) 
-	margin-left: 30px 
+	@extend %img-travesia-left
+	background-image: url(images/travesia3.jpg)
 #img-travesia4 
-	width: 800px 
-	background-size: cover 
+	@extend %img-travesia-right
 	background-image: url(images/travesia4.jpg) 
-	margin-right: 30px 
 #img-travesia5 
-	width: 800px 
-	background-size: cover 
-	background-image: url(images/travesia5.jpg) 
-	margin-left: 30px 
+	@extend %img-travesia-left 
+	background-image: url(images/travesia5.jpg)
 #img-travesia6 
-	width: 800px 
-	background-size: cover 
-	background-image: url(images/travesia6.jpg) 
-	margin-right: 30px 
+	@extend %img-travesia-right 
+	background-image: url(images/travesia6.jpg)
 section 
 	div 
 		display: flex 
