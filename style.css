@@ -120,4 +120,12 @@ section div {
   float: right;
 }
 
+#logo:hover {
+  transform: scale(1.1);
+}
+
+#logo {
+  transition: transform 0.5s;
+}
+
 /*# sourceMappingURL=style.css.map */
