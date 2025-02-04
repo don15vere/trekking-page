@@ -23,41 +23,43 @@ footer {
   margin-bottom: 10px;
 }
 
-#img-travesia6, #img-travesia4, #img-travesia2, #img-travesia5, #img-travesia3, #img-travesia1 {
+#img-travesia6, #img-travesia5, #img-travesia4, #img-travesia3, #img-travesia2, #img-travesia1 {
   width: 800px;
   background-size: cover;
 }
 
-#img-travesia5, #img-travesia3, #img-travesia1 {
-  margin-left: 30px;
-}
-
-#img-travesia6, #img-travesia4, #img-travesia2 {
+#img-travesia6, #img-travesia5, #img-travesia4, #img-travesia3, #img-travesia2, #img-travesia1 {
   margin-right: 30px;
 }
 
 #img-travesia1 {
-  background-image: url(images/travesia1.jpg);
+  @end;
+  background-image: url("images/travesia1.jpg");
 }
 
 #img-travesia2 {
-  background-image: url(images/travesia2.jpg);
+  @end;
+  background-image: url("images/travesia2.jpg");
 }
 
 #img-travesia3 {
-  background-image: url(images/travesia3.jpg);
+  @end;
+  background-image: url("images/travesia3.jpg");
 }
 
 #img-travesia4 {
-  background-image: url(images/travesia4.jpg);
+  @end;
+  background-image: url("images/travesia4.jpg");
 }
 
 #img-travesia5 {
-  background-image: url(images/travesia5.jpg);
+  @end;
+  background-image: url("images/travesia5.jpg");
 }
 
 #img-travesia6 {
-  background-image: url(images/travesia6.jpg);
+  @end;
+  background-image: url("images/travesia6.jpg");
 }
 
 section div {

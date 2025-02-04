@@ -1,3 +1,4 @@
+@use 'sass:math'
 $primary-color: rgb(202, 202, 202) 
 $bg-color: rgb(50, 50, 50)
 
@@ -31,25 +32,15 @@ footer
 	margin-left: 30px
 %img-travesia-right 
 	@extend %img-travesia 
-	margin-right: 30px	
-#img-travesia1 
-	@extend %img-travesia-left
-	background-image: url(images/travesia1.jpg)
-#img-travesia2 
-	@extend %img-travesia-right 
-	background-image: url(images/travesia2.jpg)
-#img-travesia3 
-	@extend %img-travesia-left
-	background-image: url(images/travesia3.jpg)
-#img-travesia4 
-	@extend %img-travesia-right
-	background-image: url(images/travesia4.jpg) 
-#img-travesia5 
-	@extend %img-travesia-left 
-	background-image: url(images/travesia5.jpg)
-#img-travesia6 
-	@extend %img-travesia-right 
-	background-image: url(images/travesia6.jpg)
+	margin-right: 30px
+@for $i from 1 through 6 
+	#img-travesia#{$i}
+		@if statement($i % 2 == 0)
+			@extend %img-travesia-right
+		@else
+			@extend %img-travesia-left
+		@end
+		background-image: url("images/travesia#{$i}.jpg")
 section 
 	div 
 		display: flex 
