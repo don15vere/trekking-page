@@ -1,0 +1,124 @@
+footer {
+    background-color: rgb(50, 50, 50);
+    color: rgb(202, 202, 202);
+    padding: 5px;
+    padding-right: 40px;
+    font-family: sans-serif;
+    font-size: small;
+    text-align: end;
+}
+
+#home-banner {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 600px;
+    background-size: cover;
+    background-image: url(images/banner_home.jpg);
+}
+
+.main {
+    padding: 20px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#img-travesia1 {
+    width: 800px;
+    background-size: cover;
+    background-image: url(images/travesia1.jpg);
+    margin-left: 30px;
+}
+
+#img-travesia2 {
+    width: 800px;
+    background-size: cover;
+    background-image: url(images/travesia2.jpg);
+    margin-right: 30px;
+}
+
+#img-travesia3 {
+    width: 800px;
+    background-size: cover;
+    background-image: url(images/travesia3.jpg);
+    margin-left: 30px;
+}
+
+#img-travesia4 {
+    width: 800px;
+    background-size: cover;
+    background-image: url(images/travesia4.jpg);
+    margin-right: 30px;
+}
+
+#img-travesia5 {
+    width: 800px;
+    background-size: cover;
+    background-image: url(images/travesia5.jpg);
+    margin-left: 30px;
+}
+
+#img-travesia6 {
+    width: 800px;
+    background-size: cover;
+    background-image: url(images/travesia6.jpg);
+    margin-right: 30px;
+}
+
+section div {
+    display: flex;
+}
+
+.rojo {
+    color: rgb(216, 55, 55);
+}
+
+.negrita {
+    font-weight: bolder;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+#who-banner {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 600px;
+    background-size: cover;
+    background-image: url(images/banner_who.png);
+}
+
+.lista-clasica {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.centro {
+    margin: 0 auto;
+}
+
+#form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 362px;
+}
+
+.form-label {
+    display: inline-block;
+    width: 100px;
+}
+
+.form-input {
+    width: 250px;
+}
+
+.form-textarea {
+    width: 250px;
+    height: 200px;
+}
+
+.flota-r {
+    float:right;
+}
