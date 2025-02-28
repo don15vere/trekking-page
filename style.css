@@ -47,7 +47,9 @@ header {
   height: 250px;
   max-width: 800px;
   background-size: cover;
+  background-position: center;
   margin: 0 auto;
+  display: block;
 }
 
 #img-travesia1 {
@@ -170,7 +172,7 @@ section {
   }
   #img-travesia1, #img-travesia2, #img-travesia3, #img-travesia4, #img-travesia5, #img-travesia6 {
     max-width: 100%;
-    margin: 10px 0;
+    margin: 10px auto;
   }
   #form {
     max-width: 100%;
@@ -266,16 +268,60 @@ section {
   .lines .line {
     width: 15px;
   }
+  .elementos-animacion {
+    padding-right: 150px;
+    height: 100%;
+  }
 }
 @media (max-width: 768px) {
   .lines .line {
     width: 10px;
+  }
+  .elementos-animacion {
+    padding-right: 100px;
+    height: 100%;
   }
 }
 @media (max-width: 480px) {
   .lines .line {
     width: 7px;
   }
+  .elementos-animacion {
+    padding-right: 70px;
+    height: 100%;
+  }
+}
+.elementos-animacion {
+  padding-right: 100px;
+  border: 0 solid transparent;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .elementos-animacion {
+    padding-right: 100px;
+    height: 55vh;
+  }
+}
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+.whatsapp-btn:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
