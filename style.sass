@@ -37,7 +37,7 @@ header
 .main
 	padding: 20px
 	border: 1px solid #000
-	margin-top: 10px
+	margin-top: 35px
 	margin-bottom: 10px
 	display: flex
 	flex-direction: column
@@ -231,9 +231,9 @@ section
 // #logo 
 // 	transition: transform 0.5s
 
-// Líneas animadas responsivas
+// Líneas animadas
 $colors: #7a0c00, #c61c0a, #e45a0a, #ff931e, #ffbb33
-$line-width: 20px  // Ancho de cada línea en pantallas grandes
+$line-width: 20px 
 $radius: 0px
 $animation-duration: 3s
 
@@ -245,7 +245,6 @@ $animation-duration: 3s
 	display: flex
 	flex-direction: row
 	z-index: -1
-	// gap: 5px // Espacio entre líneas
 
 	.line
 		width: $line-width
@@ -283,24 +282,20 @@ $animation-duration: 3s
 		transform: translateY(100%)
 		opacity: 0.1
 
-// 📌 Media Queries para hacer las líneas responsivas
 @media (max-width: 1024px) // Tablets
 	$line-width: 15px
 	.lines
-		// gap: 3px
 		.line
 			width: $line-width
 
 @media (max-width: 768px) // Celulares
 	$line-width: 10px
 	.lines
-		// gap: 2px
 		.line
 			width: $line-width
 
 @media (max-width: 480px) // Celulares pequeños
 	$line-width: 7px
 	.lines
-		// gap: 1px
 		.line
 			width: $line-width
