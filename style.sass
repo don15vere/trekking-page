@@ -51,7 +51,6 @@ header
 	background-size: cover
 	margin: 0 auto
 
-
 @for $i from 1 through 6
 	#img-travesia#{$i}
 		@extend %img-travesia
@@ -61,6 +60,23 @@ section
 	display: flex
 	flex-direction: column
 	align-items: center
+
+.consejo
+	width: 100%
+	// max-width: 800px
+	margin-top: 20px
+	padding: 10px
+	border: 1px solid #000
+	background-color: $bg-color
+	color: $primary-color
+
+#video
+	width: 1120px 
+	height: 630px
+
+// .video
+// 	width: 100%
+// 	height: 400px
 
 .lista-clasica
 	list-style-type: none
@@ -93,6 +109,20 @@ section
 #logo:hover
 	transform: scale(1.1)
 
+@media (min-width: 1024px) and (max-width: 1440px) // Monitores medianos
+	// #home-banner, #who-banner
+	// 	min-height: 50vh
+
+	// .main
+	// 	max-width: 90vw
+
+	// %img-travesia
+	// 	max-width: 700px
+
+	#video
+		width: 75vw
+		height: 500px
+
 @media (max-width: 1024px) // Tablets
 	#home-banner, #who-banner
 		min-height: 40vh
@@ -102,7 +132,16 @@ section
 	
 	%img-travesia
 		max-width: 600px
+	
+	#video
+		width: 80vw
+		height: 500px
 
+@media (min-width: 835px) and (max-width: 1024px) // Tablets grandes
+	#video
+		width: 70vw
+		height: 500px
+	
 @media (max-width: 768px) // Móviles
 	#home-banner, #who-banner
 		min-height: 30vh
@@ -123,6 +162,10 @@ section
 
 	.form-input, .form-textarea
 		max-width: 100%
+	
+	#video
+		width: 80vw
+		height: 400px
 
 @media (min-width: 576px) and (max-width: 991px) // Tablets pequeñas
 
@@ -138,158 +181,8 @@ section
 
 	.form-label
 		width: 70px
+	#video
+		width: 100%
+		height: 300px
 
-
-	
-// @use 'sass:math'
-
-// $primary-color: rgb(202, 202, 202) 
-// $bg-color: rgb(50, 50, 50)
-
-// @mixin sans-serif-font($size: small) 
-// 	font-family: sans-serif
-// 	font-size: $size
-	
-// footer
-// 	@include sans-serif-font
-// 	background-color: $bg-color
-// 	color: $primary-color 
-// 	padding: 5px 
-// 	padding-right: 40px	 
-// 	text-align: end 
-// #home-banner 
-// 	margin-top: 10px 
-// 	margin-bottom: 10px 
-// 	height: 600px 
-// 	background-size: cover 
-// 	background-image: url(images/banner_home.jpg) 
-// .main 
-// 	padding: 20px 
-// 	border: 1px solid #000 
-// 	margin-top: 10px 
-// 	margin-bottom: 10px
-// %img-travesia 
-// 	width: 800px 
-// 	background-size: cover
-// %img-travesia-left 
-// 	@extend %img-travesia 
-// 	margin-left: 30px
-// %img-travesia-right 
-// 	@extend %img-travesia 
-// 	margin-right: 30px
-// @for $i from 1 through 6 
-// 	#img-travesia#{$i}
-// 		@if statement($i % 2 == 0)
-// 			@extend %img-travesia-right
-// 		@else
-// 			@extend %img-travesia-left
-// 		@end
-// 		background-image: url("images/travesia#{$i}.jpg")
-// section 
-// 	div 
-// 		display: flex 
-// .rojo 
-// 	color: rgb(216, 55, 55) 
-// .negrita 
-// 	font-weight: bolder 
-// .cursiva 
-// 	font-style: italic 
-// #who-banner 
-// 	margin-top: 10px 
-// 	margin-bottom: 10px 
-// 	height: 600px 
-// 	background-size: cover 
-// 	background-image: url(images/banner_who.png) 
-// .lista-clasica 
-// 	list-style-type: none 
-// 	margin: 0 
-// 	padding: 0 
-// .centro 
-// 	margin: 0 auto 
-// #form 
-// 	margin-top: 30px 
-// 	margin-bottom: 30px 
-// 	width: 362px 
-// .form-label 
-// 	display: inline-block 
-// 	width: 100px 
-// .form-input 
-// 	width: 250px 
-// .form-textarea 
-// 	width: 250px 
-// 	height: 200px 
-// .flota-r 
-// 	float: right
-// #logo:hover 
-// 	transform: scale(1.1)
-// #logo 
-// 	transition: transform 0.5s
-
-// Líneas animadas
-$colors: #7a0c00, #c61c0a, #e45a0a, #ff931e, #ffbb33
-$line-width: 20px 
-$radius: 0px
-$animation-duration: 3s
-
-.lines
-	position: fixed
-	top: 0
-	right: 0
-	height: 100vh
-	display: flex
-	flex-direction: row
-	z-index: -1
-
-	.line
-		width: $line-width
-		height: 100%
-		border-radius: $radius
-		position: relative
-
-		@for $i from 1 through length($colors)
-			&:nth-child(#{$i})
-				background: nth($colors, $i)
-
-		// Brillo animado
-		&::before
-			content: ""
-			position: absolute
-			top: -50%
-			left: 0
-			width: 100%
-			height: 100%
-			background: rgba(255, 255, 255, 0.3)
-			border-radius: inherit
-			filter: blur(5px)
-			animation: shine $animation-duration infinite linear
-
-// Animación del brillo
-@keyframes shine
-	0%
-		transform: translateY(-100%)
-		opacity: 0.1
-	
-	50%
-		opacity: 1
-	
-	100%
-		transform: translateY(100%)
-		opacity: 0.1
-
-@media (max-width: 1024px) // Tablets
-	$line-width: 15px
-	.lines
-		.line
-			width: $line-width
-
-@media (max-width: 768px) // Celulares
-	$line-width: 10px
-	.lines
-		.line
-			width: $line-width
-
-@media (max-width: 480px) // Celulares pequeños
-	$line-width: 7px
-	.lines
-		.line
-			width: $line-width
+@import animacion.sass

@@ -1,0 +1,68 @@
+// Líneas animadas
+$colors: #7a0c00, #c61c0a, #e45a0a, #ff931e, #ffbb33
+$line-width: 20px 
+$radius: 0px
+$animation-duration: 3s
+
+.lines
+	position: fixed
+	top: 0
+	right: 0
+	height: 100vh
+	display: flex
+	flex-direction: row
+	z-index: -1
+
+	.line
+		width: $line-width
+		height: 100%
+		border-radius: $radius
+		position: relative
+
+		@for $i from 1 through length($colors)
+			&:nth-child(#{$i})
+				background: nth($colors, $i)
+
+		// Brillo animado
+		&::before
+			content: ""
+			position: absolute
+			top: -50%
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba(255, 255, 255, 0.3)
+			border-radius: inherit
+			filter: blur(5px)
+			animation: shine $animation-duration infinite linear
+
+// Animación del brillo
+@keyframes shine
+	0%
+		transform: translateY(-100%)
+		opacity: 0.1
+	
+	50%
+		opacity: 1
+	
+	100%
+		transform: translateY(100%)
+		opacity: 0.1
+
+@media (max-width: 1024px) // Tablets
+	$line-width: 15px
+	.lines
+		.line
+			width: $line-width
+
+@media (max-width: 768px) // Celulares
+	$line-width: 10px
+	.lines
+		.line
+			width: $line-width
+
+@media (max-width: 480px) // Celulares pequeños
+	$line-width: 7px
+	.lines
+		.line
+			width: $line-width
