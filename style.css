@@ -51,6 +51,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 2vh;
 }
 
 #img-travesia6, #img-travesia5, #img-travesia4, #img-travesia3, #img-travesia2, #img-travesia1 {
