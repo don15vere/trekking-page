@@ -46,23 +46,15 @@ header
 
 %img-travesia
 	width: 100%
+	height: 250px
 	max-width: 800px
 	background-size: cover
+	margin: 0 auto
 
-%img-travesia-left 
-	@extend %img-travesia
-	margin-left: 30px
-
-%img-travesia-right
-	@extend %img-travesia
-	margin-right: 30px
 
 @for $i from 1 through 6
 	#img-travesia#{$i}
-		@if ($i % 2 == 0)
-			@extend %img-travesia-right
-		@else
-			@extend %img-travesia-left
+		@extend %img-travesia
 		background-image: url("images/travesia#{$i}.jpg")
 
 section
@@ -132,15 +124,17 @@ section
 	.form-input, .form-textarea
 		max-width: 100%
 
+@media (min-width: 576px) and (max-width: 991px) // Tablets pequeñas
+
+	%img-travesia
+		margin-right: 30px
+
 @media (max-width: 480px) // Celulares pequeños
 	#home-banner, #who-banner
 		min-height: 25vh
 
 	.main
 		padding: 5px
-
-	%img-travesia
-		max-width: 90%
 
 	.form-label
 		width: 70px
