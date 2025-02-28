@@ -1,27 +1,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://misitio.com/</loc>
+        <loc>https://trekking-page.vercel.app/</loc>
         <lastmod>2025-02-28</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://misitio.com/travesias/</loc>
+        <loc>https://trekking-page.vercel.app/travesias/</loc>
         <lastmod>2025-02-28</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://misitio.com/consejos/</loc>
+        <loc>https://trekking-page.vercel.app/consejos/</loc>
         <lastmod>2025-02-28</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://misitio.com/quienes-somos/</loc>
+        <loc>https://trekking-page.vercel.app/quienes-somos/</loc>
         <lastmod>2025-02-28</lastmod>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://misitio.com/contacto/</loc>
+        <loc>https://trekking-page.vercel.app/contacto/</loc>
         <lastmod>2025-02-28</lastmod>
-        <priority>0.8</priority>
+        <priority>0.6</priority>
     </url>
 </urlset>
