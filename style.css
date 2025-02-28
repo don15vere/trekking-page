@@ -1,16 +1,31 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-md {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 footer {
   font-family: sans-serif;
   font-size: small;
-  height: 5vh;
   background-color: rgb(50, 50, 50);
   color: rgb(202, 202, 202);
   padding: 5px;
   padding-right: 40px;
   text-align: end;
+  position: relative;
+  bottom: 0;
 }
 
 header {
-  height: 5vh;
+  margin-bottom: 2vh;
 }
 
 #home-banner, #who-banner {
@@ -32,14 +47,10 @@ header {
 }
 
 .main {
-  padding: 20px;
-  border: 1px solid #000;
-  margin-top: 35px;
-  margin-bottom: 10px;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 90vw;
+  justify-content: center;
 }
 
 #img-travesia6, #img-travesia5, #img-travesia4, #img-travesia3, #img-travesia2, #img-travesia1 {
@@ -297,15 +308,9 @@ section {
   margin-top: 20px;
 }
 
-@media (min-width: 768px) and (min-height: 1024px) {
-  .elementos-animacion {
-    padding-right: 100px;
-    height: 55vh;
-  }
-}
 .whatsapp-btn {
   position: fixed;
-  bottom: 20px;
+  bottom: 10vh;
   right: 20px;
   width: 60px;
   height: 60px;
